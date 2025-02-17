@@ -1,0 +1,13 @@
+<!-- templates/commentstore/index.html -->
+<html>
+    <body>
+        <h1>Welcome to the Comment Store Application!</h1>
+        <form method="POST">
+            {% csrf_token %}
+            Name: <input type="text" name="name"><br>
+            Date: <input type="text" name="date" placeholder="DD/MM/YYYY"><br>
+            Comment: <textarea name="commentstr"></textarea><br>
+            <button type="submit">Submit Comment</button>
+        </form>
+    </body>
+</html>
